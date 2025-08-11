@@ -47,6 +47,66 @@ const mockVenues = [
     amenities: ["Parking", "Pro Shop", "Coaching", "Refreshments"],
     availability: "Busy",
   },
+  {
+    id: "4",
+    name: "Ahmedabad Sports Hub",
+    sport: "Badminton",
+    location: "Satellite, Ahmedabad",
+    pricePerHour: 600,
+    rating: 4.7,
+    reviews: 98,
+    image: "/badminton-court.png",
+    amenities: ["Parking", "Changing Room", "Water", "AC"],
+    availability: "Available",
+  },
+  {
+    id: "5",
+    name: "Gujarat Basketball Center",
+    sport: "Basketball",
+    location: "Vastrapur, Ahmedabad",
+    pricePerHour: 900,
+    rating: 4.5,
+    reviews: 67,
+    image: "/outdoor-basketball-court.png",
+    amenities: ["Parking", "Changing Room", "Scoreboard", "Lighting"],
+    availability: "Available",
+  },
+  {
+    id: "6",
+    name: "Surat Tennis Academy",
+    sport: "Tennis",
+    location: "Adajan, Surat",
+    pricePerHour: 1100,
+    rating: 4.6,
+    reviews: 145,
+    image: "/outdoor-tennis-court.png",
+    amenities: ["Parking", "Pro Shop", "Coaching", "Equipment Rental"],
+    availability: "Available",
+  },
+  {
+    id: "7",
+    name: "Vadodara Sports Complex",
+    sport: "Football",
+    location: "Alkapuri, Vadodara",
+    pricePerHour: 1800,
+    rating: 4.8,
+    reviews: 203,
+    image: "/football-field.png",
+    amenities: ["Parking", "Changing Room", "Floodlights", "Refreshments"],
+    availability: "Available",
+  },
+  {
+    id: "8",
+    name: "Rajkot Cricket Ground",
+    sport: "Cricket",
+    location: "University Road, Rajkot",
+    pricePerHour: 2000,
+    rating: 4.9,
+    reviews: 312,
+    image: "/cricket-ground.png",
+    amenities: ["Parking", "Pavilion", "Equipment", "Scoreboard"],
+    availability: "Busy",
+  },
 ]
 
 export default function VenuesPage() {
@@ -75,6 +135,7 @@ export default function VenuesPage() {
                 <SelectItem value="basketball">Basketball</SelectItem>
                 <SelectItem value="tennis">Tennis</SelectItem>
                 <SelectItem value="football">Football</SelectItem>
+                <SelectItem value="cricket">Cricket</SelectItem>
               </SelectContent>
             </Select>
             <Select>
@@ -83,9 +144,18 @@ export default function VenuesPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Locations</SelectItem>
+                <SelectItem value="bangalore">Bangalore</SelectItem>
                 <SelectItem value="koramangala">Koramangala</SelectItem>
                 <SelectItem value="indiranagar">Indiranagar</SelectItem>
                 <SelectItem value="whitefield">Whitefield</SelectItem>
+                <SelectItem value="ahmedabad">Ahmedabad</SelectItem>
+                <SelectItem value="satellite">Satellite</SelectItem>
+                <SelectItem value="vastrapur">Vastrapur</SelectItem>
+                <SelectItem value="surat">Surat</SelectItem>
+                <SelectItem value="adajan">Adajan</SelectItem>
+                <SelectItem value="vadodara">Vadodara</SelectItem>
+                <SelectItem value="alkapuri">Alkapuri</SelectItem>
+                <SelectItem value="rajkot">Rajkot</SelectItem>
               </SelectContent>
             </Select>
             <Select>
