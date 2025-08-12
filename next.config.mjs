@@ -34,6 +34,10 @@ const nextConfig = {
   },
   compress: true,
   output: 'standalone',
+  trailingSlash: false,
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
+  },
 }
 
 export default nextConfig

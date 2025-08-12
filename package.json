@@ -1,14 +1,16 @@
 {
-  "name": "my-v0-project",
-  "version": "0.1.0",
+  "name": "quickcourt-sports-booking",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "next build",
     "clean": "rm -rf .next node_modules pnpm-lock.yaml",
     "dev": "next dev",
-    "fresh-install": "pnpm clean && pnpm install",
+    "fresh-install": "pnpm run clean && pnpm install",
+    "postinstall": "pnpm dlx @next/bundle-analyzer",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
