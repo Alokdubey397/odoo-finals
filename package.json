@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "build": "next build",
+    "clean": "rm -rf .next node_modules pnpm-lock.yaml",
     "dev": "next dev",
+    "fresh-install": "pnpm clean && pnpm install",
     "lint": "next lint",
     "start": "next start"
   },
@@ -67,7 +69,6 @@
     "@types/react-dom": "^18",
     "postcss": "^8.5",
     "tailwindcss": "^4.1.9",
-    "tw-animate-css": "1.3.3",
     "typescript": "^5"
   }
 }
